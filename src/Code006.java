@@ -18,6 +18,8 @@ public class Code006 {
         }
 
         Node reverseHead = null;
+
+
         // 指针1：当前节点
         Node currentNode = head;
         // 指针2：当前节点的前一个节点

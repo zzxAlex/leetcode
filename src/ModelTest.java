@@ -16,7 +16,7 @@ public class ModelTest {
         Consumer c = new Consumer(mLock, mCondition);
 
 
-        for (int i = 0; i < 1; i++) {
+        for (int i = 0; i < 3; i++) {
             ThreadProduct mThreadProduct = new ThreadProduct(p);
             ThreadConsumer mThreadConsumer = new ThreadConsumer(c);
 
@@ -62,8 +62,8 @@ class Product {
                 //有钱，不生产
                 mCondition.await();
             }
-            MoneyObject.setMoney(System.currentTimeMillis() + "人民币");
-            System.out.println("赚了：" + System.currentTimeMillis() + "人民币");
+            MoneyObject.setMoney(   100 + "人民币");
+            System.out.println("赚了：" +    100 + "人民币");
             mCondition.signalAll();//生产结束，唤醒，使用signalAll()可以防止唤醒同类线程造成“假死”状态
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -78,7 +78,7 @@ class Product {
  **/
 class ThreadProduct extends Thread {
     private Product mProduct;
-    private volatile int i = 5;//控制消费次数
+    private volatile int i = 1;//控制消费次数
 
     public ThreadProduct(Product mProduct) {
         super();
@@ -130,7 +130,7 @@ class Consumer {
  **/
 class ThreadConsumer extends Thread {
     private Consumer mConsumer;
-    private volatile int i = 5;
+    private volatile int i = 1;
 
     public ThreadConsumer(Consumer mConsumer) {
         super();
