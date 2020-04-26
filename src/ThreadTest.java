@@ -5,11 +5,6 @@ import java.util.concurrent.locks.ReentrantLock;
  * 常见的线程测试类方法
  */
 
-
-
-
-
-
 class threadTest implements Runnable {
 
     private String locka;
