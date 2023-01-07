@@ -11,5 +11,11 @@ public class LinkTest001 {
 
     public static void main(String[] args) {
 
+        ListNode node1 = new ListNode(1);
+        node1.add(2);
+        node1.add(3);
+        node1.add(4);
+        node1.print();
+
     }
 }
