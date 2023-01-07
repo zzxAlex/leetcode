@@ -8,6 +8,7 @@ package linkedlist;
  * https://www.bilibili.com/video/BV1eg411w7gn?p=11&vd_source=3e80f41ba1bd675fc2cf6a0826786160
  */
 public class LinkTest001 {
+
     public static void main(String[] args) {
 
     }
