@@ -14,7 +14,7 @@ package array;
  *
  * https://www.bilibili.com/video/BV1eg411w7gn?p=9&spm_id_from=pageDriver&vd_source=3e80f41ba1bd675fc2cf6a0826786160
  */
-public class CodeTest005 {
+public class ArrayTest005 {
 
     private void  solution(int[] nums){
         // 一次遍历移动数据，二次遍历重置为0
@@ -45,7 +45,7 @@ public class CodeTest005 {
 
         int[] nums=new int[]{1,0,2,0,3,444,53,0,0};
 
-        new CodeTest005().solution(nums);
+        new ArrayTest005().solution(nums);
 
         for (int i = 0; i < nums.length; i++) {
             System.out.print(nums[i]+",");

@@ -14,7 +14,7 @@ import java.util.HashMap;
  * 输出：[0,1]
  * 解释：因为 nums[0] + nums[1] == 9 ，返回 [0, 1] 。
  */
-public class CodeTest003 {
+public class ArrayTest003 {
 
     private HashMap<Integer, Integer> tempHash = new HashMap<>();
 
@@ -45,7 +45,7 @@ public class CodeTest003 {
             System.out.println(nums[i]);
         }
 
-        int[] solution = new CodeTest003().solution(nums, target);
+        int[] solution = new ArrayTest003().solution(nums, target);
 
         for (int i = 0; i < solution.length; i++) {
             System.out.println(solution[i]);

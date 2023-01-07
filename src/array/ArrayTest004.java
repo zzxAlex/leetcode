@@ -20,7 +20,7 @@ package array;
  * <p>
  * 双指针交换
  */
-public class CodeTest004 {
+public class ArrayTest004 {
 
     public void solution(int[] nums1, int[] nums2, int m, int n) {
 
@@ -84,8 +84,8 @@ public class CodeTest004 {
         int m = 3;
         int n = 3;
 
-//        new CodeTest004().solution(ms, ns, m, n);
-        new CodeTest004().solution2(ms, ns, m, n);
+//        new ArrayTest004().solution(ms, ns, m, n);
+        new ArrayTest004().solution2(ms, ns, m, n);
 
         for (int i = 0; i < ms.length; i++) {
             System.out.println(ms[i]);

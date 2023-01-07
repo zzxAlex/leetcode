@@ -14,7 +14,7 @@ import java.util.HashMap;
  * <p>
  * 多次求解，单次递归，中间值保存
  */
-public class CodeTest001 {
+public class ArrayTest001 {
     private HashMap<Integer, Integer> tempMap = new HashMap<>();
 
     public int solution1(int n) {
@@ -46,9 +46,9 @@ public class CodeTest001 {
     public static void main(String[] args) {
 
 
-        System.out.println(new CodeTest001().solution1(20));
+        System.out.println(new ArrayTest001().solution1(20));
 
-        System.out.println(new CodeTest001().solution2(20));
+        System.out.println(new ArrayTest001().solution2(20));
 
 
     }

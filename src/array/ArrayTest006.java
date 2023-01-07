@@ -16,7 +16,7 @@ import java.util.List;
  * 输出：[5,6]
  *
  */
-public class CodeTest006 {
+public class ArrayTest006 {
 
     private List<Integer>  solution(int[] nums){
 
@@ -45,7 +45,7 @@ public class CodeTest006 {
     public static void main(String[] args) {
         int[] nums = new int[]{1,1};
 
-        List<Integer> solution = new CodeTest006().solution(nums);
+        List<Integer> solution = new ArrayTest006().solution(nums);
 
         System.out.println(solution.toString());
 

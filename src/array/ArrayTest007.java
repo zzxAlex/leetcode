@@ -12,7 +12,7 @@ import java.util.List;
  * 输入：nums = [4,3,2,7,8,2,3,1]
  * 输出：[5,6]
  */
-public class CodeTest007 {
+public class ArrayTest007 {
 
     private List<Integer> solution(int[] nums) {
         HashMap<Integer, Integer> temp = new HashMap<Integer, Integer>();
@@ -50,7 +50,7 @@ public class CodeTest007 {
     public static void main(String[] args) {
         int[] nums = new int[]{1, 1};
 
-        List<Integer> solution = new CodeTest007().solution(nums);
+        List<Integer> solution = new ArrayTest007().solution(nums);
 
         System.out.println(solution.toString());
 

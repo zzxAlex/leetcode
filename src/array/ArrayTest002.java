@@ -14,7 +14,7 @@ import java.util.HashMap;
  *
  * https://www.bilibili.com/video/BV1eg411w7gn?p=6&spm_id_from=pageDriver&vd_source=3e80f41ba1bd675fc2cf6a0826786160
  */
-public class CodeTest002 {
+public class ArrayTest002 {
     private HashMap<Integer, Integer> tempMap = new HashMap<>();
     public int solution1(int n){
         if (n==0) {
@@ -54,7 +54,7 @@ public class CodeTest002 {
 
     public static void main(String[] args) {
 
-        System.out.println(new CodeTest002().solution1(5));
-        System.out.println(new CodeTest002().solution2(5));
+        System.out.println(new ArrayTest002().solution1(5));
+        System.out.println(new ArrayTest002().solution2(5));
     }
 }
