@@ -49,6 +49,34 @@ public class CodeTest004 {
 
     }
 
+    /**
+     * 倒序节省空间
+     * @param nums1
+     * @param nums2
+     * @param m
+     * @param n
+     */
+    public void solution2(int[] nums1, int[] nums2, int m, int n) {
+
+        int k = m + n;
+
+        for (int index = k-1, nums1Index = m-1, nums2Index = n-1; index >= 0; index--) {
+            if (nums1Index  <0) {
+                nums1[index] = nums2[nums2Index];
+                nums2Index--;
+            } else if (nums2Index <0 ) {
+                break;
+            } else if (nums1[nums1Index] > nums2[nums2Index]) {
+                nums1[index] = nums1[nums1Index];
+                nums1Index--;
+            } else {
+                nums1[index] = nums2[nums2Index];
+                nums2Index--;
+            }
+        }
+
+    }
+
 
     public static void main(String[] args) {
         int[] ms = new int[]{1, 2, 3, 0, 0, 0};
@@ -56,7 +84,8 @@ public class CodeTest004 {
         int m = 3;
         int n = 3;
 
-        new CodeTest004().solution(ms, ns, m, n);
+//        new CodeTest004().solution(ms, ns, m, n);
+        new CodeTest004().solution2(ms, ns, m, n);
 
         for (int i = 0; i < ms.length; i++) {
             System.out.println(ms[i]);
