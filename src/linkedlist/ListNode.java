@@ -20,16 +20,17 @@ public class ListNode {
         ListNode nextNode = new ListNode(num);
         if (this.next == null) {
             this.next = nextNode;
-        }else
+        } else
             this.next.add(num);
 
     }
 
-    public void print(){
+    public void print() {
         System.out.print(this.val);
         if (this.next != null) {
             System.out.print("->");
             this.next.print();
         }
     }
+
 }
