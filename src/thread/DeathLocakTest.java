@@ -1,3 +1,5 @@
+package thread;
+
 /**
  * 死锁案例测试
  */
